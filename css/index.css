@@ -5,6 +5,13 @@ body{
   background-color: black
 }
 
+:root {
+  --color-dark: #000000;
+  --color-dark-x: #000205;
+  --color-dark-xx: #141414;
+  --color-light: #ffffff;
+  --color-grey: #000000;
+}
 
 /* INDEX */
 
@@ -304,13 +311,6 @@ body{
 
  /*PAGINA DE CONTACTO*/
 
- :root {
-  --color-dark: #000000;
-  --color-dark-x: #000205;
-  --color-dark-xx: #141414;
-  --color-light: #ffffff;
-  --color-grey: #000000;
-}
 
  .bg-light {
   background-color: var(--color-light)!important;
@@ -363,7 +363,7 @@ body{
 }
 
 .testiomonial {
-  bottom: 10px
+  bottom: 10px;
 }
 
 
