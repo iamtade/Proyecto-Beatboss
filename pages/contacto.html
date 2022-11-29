@@ -30,24 +30,45 @@
 </head>
 <body>
     <header class="topheader">
-        <nav class="topnav">
-            <a href="#" class="logo">
-                <img src="../images/icon.png" alt="Logo BeatBoss">
-            </a>
-                <ul class="menu">
-
-                     <li><a href="../index.html"> Inicio </a></li>
-
-                     <li><a href="../pages/productos.html" > Productos </a></li>
-
-                     <li><a href="../pages/ubicacion.html"> ¿Donde encontrarnos?</a></li>
-
-                     <li><a href="../pages/preguntasfrecuentes.html" > Preguntas frecuentes </a></li>
-
-                     <li><a class="activo" href="#"> Contacto </a></li>
-
+        
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container">
+              <a href="#" class="navbar-brand">
+                <i class="fa-solid fa-dumbbell"></i> BeatBoss</i>
+              </a>
+      
+              <button
+                class="navbar-toggler"
+                type="button"
+                class
+                data-bs-toggle="collapse"
+                data-bs-target="#mobile"
+              >
+                <span class="navbar-toggler-icon"> </span>
+              </button>
+      
+              <div id="mobile" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto fs-5 shadow">
+                  <li class="nav-item">
+                    
+                    <a href="../index.html" class="nav-link ms-3">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../pages/productos.html" class="nav-link ms-3">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../pages/ubicacion.html" class="nav-link ms-3">Ubicacion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../pages/preguntasfrecuentes.html" class="nav-link ms-3">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ms-3">Contacto</a>
+                  </li>
                 </ul>
-      </nav>
+              </div>
+            </div>
+          </nav>
 </header>
 
 <section class="contact-box">
@@ -86,6 +107,8 @@
              </div>
         </div>
     </div>
+
+    <!-- boton de wsp -->
     <a href="https://api.whatsapp.com/send?phone=numero&amp;text=Mensaje por defecto" class="float" target="_blank">
         <i class="fa fa-whatsapp my-float" aria-hidden="true"></i> </a>
 </section>

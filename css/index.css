@@ -1,123 +1,6 @@
-* {
-  color: white
-}
-body{
-  background-color: black
-}
-
-:root {
-  --color-dark: #000000;
-  --color-dark-x: #000205;
-  --color-dark-xx: #141414;
-  --color-light: #ffffff;
-  --color-grey: #000000;
-}
 
 /* INDEX */
 
-/*Barra de navegación*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans&display=swap');
-
-.topnav{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-
-
-.logo img{
-   
-    width: 100px;
- 
-    
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.topheader{
-    box-shadow: 0 2px 0px rgba(255, 0, 0, 0.226);
-    width: 100%;
-    position: fixed;
-    margin: 0 auto;
-    background-color: black;
-    left: 0;
-    top: 0;
-    width: 100%;
-}
-
-.menu li{
-    padding: 0 25px;
-}
-
-.menu a{
-  font-family: 'Monserrat', sans-serif;
-  text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    line-height:50px;
-    text-transform: uppercase;
-    position: relative;
-}
-
-.topheader ul li a{
-  position: relative;
-}
-
-.topheader ul li a::before,
-.topheader ul li a::after
-{
-  content: '';
-  border-bottom: 2px solid red;
-  position: absolute;
-  opacity: 0;
-  transition: 0.2s;
-}
-
-.topheader ul li a::before{
-  bottom: -5px;
-  width: 90%;
-  right: 0;
-}
-
-.topheader ul li a::after{
-  bottom: -10px;
-  width: 60%;
-  left: 0;
-}
-
-.topheader ul li a.activo::before,
-.topheader ul li a:hover::before{
-  opacity: 1;
-  width: 70%;
-}
-
-.topheader ul li a.activo::after,
-.topheader ul li a:hover::after{
-  opacity: 1;
-  width: 40%;
-}
-
-/* Media queris*/
-
-/* navbar */
-@media (max-width: 980px) {
-    .logo img{
-        width: 100px;           
-    }
-    
-    
-    .menu a{
-        display: none;
-    }
-}
-/*Cierre de Barra de navegación*/
 
 
 
@@ -209,6 +92,9 @@ body{
       font-family: 'Roboto', sans-serif;
     }
   }
+
+
+
   /*CIERRE PROFILE PAGINA DE INDEX*/
 
 
@@ -216,16 +102,28 @@ body{
   /* PAGINA DE UBICACION*/
   .ubicacion-info{
     margin-bottom: 25px;
+  
 }
 
 .ubicacion{
     text-align: center;
+   
 }
 
 .ubicacion-title{
     font-size: 35px;
     font-weight: bold;
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'open sans', sans-serif;
+    margin-top: 150px;
+    
+}
+
+.ubicacion-stitle{
+  font-size: 35px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 150px;
+    text-align: center
 }
 
 .ubicacion-details{
@@ -240,6 +138,7 @@ body{
 .ubicacion-map-section{
     width: 100%;
     margin-top: 80px;
+    
 }
 
 .map{
@@ -248,9 +147,12 @@ body{
     border-radius: 10%;
 }
 
+
+
 @media (min-width: 950px){
     .ubicacion-info {
       margin-bottom: 0px;
+    
     }
     
     .map {
@@ -266,6 +168,7 @@ body{
       max-width: 980px;
       margin: 0 auto;
       align-items: center;
+     
     }
     
     .ubicacion-title {
@@ -275,6 +178,7 @@ body{
     .ubicacion-details {
       font-size: 20px;
       margin: 30px 0;
+    
     }    
   }
   /*CIERRE DE PAGINA DE UBICACION*/
@@ -397,6 +301,8 @@ body{
 
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans&display=swap');
 
+ 
+
   .pie-pagina{
     width: 100%;
     background-color: #6d0707;
@@ -459,6 +365,7 @@ body{
 
   .pie-pagina .grupo2{
     background-color: rgb(204, 12, 12);
+
     padding: 15px 10px;
     text-align: center;
     color: #fff;
@@ -510,3 +417,93 @@ body{
   }
   
 /*CIERRE DE BOTON DE WSP FIJO*/  
+
+* {
+  color: white
+}
+ body{
+  background-color: black
+} 
+
+:root {
+  --color-dark: #000000;
+  --color-dark-x: #000205;
+  --color-dark-xx: #141414;
+  --color-light: #ffffff;
+  --color-grey: #000000;
+}
+
+
+
+/*Barra de navegación*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans&display=swap');
+
+.navbar{
+  background-color: #6d0707 !important;
+ }
+/*
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+
+.navbar-brand{
+   
+    width: 50px;
+    height: 50px;
+ 
+    
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topheader{
+    box-shadow: 0 2px 0px rgba(255, 0, 0, 0.226);
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;
+    background-color: black;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.menu li{
+    padding: 0 25px;
+}
+
+.menu a{
+  font-family: 'Monserrat', sans-serif;
+  text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height:50px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/*Cierre de Barra de navegación*/
+
+/*WAVE INICIO*/
+
+.wave{
+  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+/*WAVE FINAL*/
