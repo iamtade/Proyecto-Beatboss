@@ -107,7 +107,6 @@
 
 .ubicacion{
     text-align: center;
-   
 }
 
 .ubicacion-title{
@@ -441,7 +440,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans&display=swap');
 
 .navbar{
-  background-color: #6d0707 !important;
+  background-image: linear-gradient(-225deg, #000000 0%, #0a0505 48%, #6d0707 100%)!important;
+ }
+
+ .navbar-logo{
+  width: 100px;
+  /* height: 25px ; */
  }
 /*
 .topnav{
