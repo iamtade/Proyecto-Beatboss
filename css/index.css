@@ -6,9 +6,14 @@
 
 /* Seccion profile de index*/
   
+  .bg-profile{
+    background-image: linear-gradient(-225deg, #000000 0%, #0a0505 48%, #6d0707 100%)!important;
+  }
+
   .profile-info{
     margin-bottom: 25px;
     margin-top: 150px;
+   
     
   }
   
@@ -20,6 +25,7 @@
   
   .profile{
     text-align: center;
+    
    
   }
   
@@ -76,6 +82,7 @@
       max-width: 980px;
       margin: 0 auto;
       align-items: center;
+    
     }
     
     .profile-title {
@@ -93,6 +100,132 @@
     }
   }
 
+  .manejos {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .manejo-body {
+    background-color: #6d0707;
+    background-image: linear-gradient(to top, #000000 0%, #6d0707 100%);
+  }
+  
+  .wave {
+    width: 100%;
+    position: relative;
+    top: 2px;
+  }
+  
+  
+  
+  .manejo-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 25px;
+  }
+  
+  .manejo-date {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .manejo-company {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
+  
+  .manejo-position {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .manejo-description {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
+  .manejo {
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 950px) {
+    .manejo-title {
+      font-size: 50px;
+      margin: 35px 0;
+    }
+  
+    .manejo-date {
+      font-size: 40px;
+    }
+  
+    .manejo-company {
+      font-size: 25px;
+    }
+  
+    .manejo-position {
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  
+    .manejo-description {
+      font-size: 20px;
+      margin-top: 10px;
+      line-height: 1.3;
+    }
+  
+    .manejo {
+      padding: 0;
+    }
+  
+    .manejo_left {
+      text-align: right;
+    }
+  
+    .manejo-grid {
+      display: grid;
+      grid-template-columns: auto 2px auto;
+      gap: 20px 70px;
+      padding: 70px;
+      justify-content: center;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+  
+    .line {
+      background-color: white;
+      position: relative;
+    }
+  
+    .line::before,
+    .line::after {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      border-radius: 50%;
+  
+      position: absolute;
+      top: -20px;
+      left: -9px;
+    }
+  
+    .line::after {
+      top: 100%;
+      z-index: 1;
+    }
+  }
+
 
 
   /*CIERRE PROFILE PAGINA DE INDEX*/
@@ -100,6 +233,12 @@
 
 
   /* PAGINA DE UBICACION*/
+ 
+  .bg-ubicacion{
+    background-color: #520404;
+     background-image: linear-gradient(to top, #000000 0%, #520404 100%);
+    }
+
   .ubicacion-info{
     margin-bottom: 25px;
   
@@ -118,11 +257,11 @@
 }
 
 .ubicacion-stitle{
-  font-size: 35px;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 150px;
-    text-align: center
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  
 }
 
 .ubicacion-details{
