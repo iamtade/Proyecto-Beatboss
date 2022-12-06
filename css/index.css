@@ -109,7 +109,7 @@
   .manejo-body {
     background-color: #6d0707;
     background-image: linear-gradient(to top, #000000 0%, #6d0707 100%);
-  }
+  }   /*gradiente para body*/
   
   .wave {
     width: 100%;
@@ -409,7 +409,7 @@
 }
 
 
-@media (max-width: 575.98px) {
+@media (max-width: 550.98px) {
   .p-6 {
       padding: 2rem;
   }
@@ -431,9 +431,110 @@
 
 /*CIERRE DE PAGINA DE CONTACTO*/
 
+/*PAGINA DE PRODUCTOS*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+.titlediv-product{
+  margin-top: 150px;
+}
+
+.title-product{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.container-product{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: minmax(500px, auto);
+  gap: 20px;
+  padding: 20px;
+  margin-left: 60px;
+}
+
+.card-product{
+  background-color: #520404;
+}
+
+.container-product .card-product{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container-product .card-product:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-product .card-product img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.container-product .card-product h4{
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.container-product .card-product p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container-product .card-product a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+
+
+
+
+/*CIERRE PAGINA DE PRODUCTOS*/
+
 
 /* PREGUNTAS FRECUENTES */
 
+.pf-titlediv{
+  margin-top: 150px;
+  margin-bottom: 50px;
+  border-bottom: #520404 1px solid;
+}
+
+  .pf-title{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'open sans', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+.pf-titlediv p{
+  font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    max-width: 450px;
+    margin: 20px auto;
+    font-family: 'Open sans', sans-serif;
+}
+
+/* CIERRE PREGUNTAS FRECUENTES */
 
   /*FOOTER*/
 
