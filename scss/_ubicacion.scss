@@ -1,0 +1,95 @@
+ /* PAGINA DE UBICACION*/
+
+ .bg-ubicacion{
+    background-color: $bg-secundary-color;
+    background-image: $color-gradiant-terciary;
+ }
+
+
+
+.ubicacion-info{
+margin-bottom: 25px;
+}
+
+.ubicacion{
+text-align: center;
+}
+
+.ubicacion-title{
+font-size: 35px;
+font-weight: bold;
+font-family: $title;
+margin-top: 150px;
+color: $p-color;
+
+}
+
+.ubicacion-stitle{
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 30px;
+font-family: $details;
+color: $p-color;
+
+}
+
+.ubicacion-details{
+font-size: 18px;
+font-weight: 500;
+line-height: 1.3;
+max-width: 450px;
+margin: 20px auto;
+font-family: $details;
+}
+
+.ubicacion-map-section{
+width: 100%;
+margin-top: 80px;
+
+}
+
+.map{
+height: 500px;
+width: 500px;
+border-radius: 10%;
+}
+
+
+
+@media (min-width: 950px){
+.ubicacion-info {
+  margin-bottom: 0px;
+
+}
+
+.map {
+    margin-top: 30px;
+    margin-left: 100px;
+  width: 100%;
+}
+
+.ubicacion {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto;
+  align-items: center;
+ 
+}
+
+.ubicacion-title {
+  font-size: 60px;
+  color: $p-color;
+}
+
+.ubicacion-details {
+  font-size: 20px;
+  margin: 30px 0;
+  color: $p-color;
+
+}    
+}
+
+/*CIERRE DE PAGINA DE UBICACION*/

@@ -1,0 +1,263 @@
+/* INDEX */
+
+/* SECCION PROFILE*/
+  
+.bg-profile{
+    background-image: $color-gradiant;
+    color: $p-color;
+
+    section{
+        text-align: center;
+    }
+
+    .profile-info{
+        margin-bottom: 25px;
+     margin-top: 150px;
+    }
+
+    h1{
+        font-size: 35px;
+     font-weight: bold;
+     margin: 0;
+     font-family: $title;
+    }
+    
+    p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    max-width: 450px;
+    margin: 20px auto;
+    font-family: $details;
+    }
+
+    .profile-img{
+        width: 80%;
+        max-width: 350px;
+    }
+
+    button{
+
+     font-family: $title;
+     color: $p-color;
+     background-color: $details-color;
+     border: none;
+     font-size: 20px;
+     padding:0.5em 1em;
+     border-radius: 7px;
+     cursor: pointer;
+   }
+  
+   button:hover{
+     filter: brightness(130%);
+   }
+
+   @media (min-width: 950px){
+         .profile-info {
+           margin-bottom: 0px;
+         }
+        
+         .profile-img {
+           width: 100%;
+           max-width: 350px;
+         }
+        
+         .profile {
+           text-align: left;
+           display: flex;
+           justify-content: space-between;
+           max-width: 980px;
+           margin: 0 auto;
+           align-items: center;
+        
+         }
+        
+         .profile-title {
+           font-size: 50px;
+         }
+        
+         .profile-details {
+           font-size: 20px;
+           margin: 30px 0;
+         }
+        
+         .profile-btn {
+           font-size: 28px;
+           font-family: 'Roboto', sans-serif;
+         }
+       }
+
+    }
+
+//CIERRE DE SECTION PROFILE
+
+
+//APERTURA SECTION MANEJOS
+
+.manejos{
+    display: flex;
+    flex-direction: column;
+    color: $p-color;
+
+    .manejo-body{
+        background-color: $bg-secundary-color;
+        background-image: $color-gradiant-secundary;
+    }
+     
+    .wave {
+        width: 100%;
+        position: relative;
+        top: 2px;
+      }
+
+      h2{
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 30px;
+          margin: 25px;
+          font-family: $title;
+      }
+
+      .manejo-date {
+        font-size: 25px;
+        font-weight: bold;
+        color: $p-color;
+      }
+
+      .manejo-company {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 5px;
+      }
+      
+      .manejo-position {
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      
+      .manejo-description {
+        font-weight: 400;
+        font-size: 15px;
+        margin-top: 10px;
+      }
+      
+      .manejo {
+        padding: 25px;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      
+      @media (min-width: 950px) {
+        .manejo-title {
+          font-size: 50px;
+          margin: 35px 0;
+        }
+      
+        .manejo-date {
+          font-size: 40px;
+        }
+      
+        .manejo-company {
+          font-size: 25px;
+        }
+      
+        .manejo-position {
+          font-weight: bold;
+          font-size: 20px;
+          margin-top: 20px;
+        }
+      
+        .manejo-description {
+          font-size: 20px;
+          margin-top: 10px;
+          line-height: 1.3;
+        }
+      
+        .manejo {
+          padding: 0;
+        }
+      
+        .manejo_left {
+          text-align: right;
+        }
+      
+        .manejo-grid {
+          display: grid;
+          grid-template-columns: auto 2px auto;
+          gap: 20px 70px;
+          padding: 70px;
+          justify-content: center;
+          max-width: 980px;
+          margin: 0 auto;
+        }
+      
+        .line {
+          background-color: white;
+          position: relative;
+        }
+      
+        .line::before,
+        .line::after {
+          content: "";
+          display: block;
+          width: 20px;
+          height: 20px;
+          background-color: white;
+          border-radius: 50%;
+      
+          position: absolute;
+          top: -20px;
+          left: -9px;
+        }
+      
+        .line::after {
+          top: 100%;
+          z-index: 1;
+        }
+      }
+    
+}
+
+/* Boton de Wsp fijo*/
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:41px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  transition: 0.3s;
+  background-color:rgb(1, 80, 1);
+}
+
+.my-float{
+  margin-top:16px;
+}
+
+/*CIERRE DE BOTON DE WSP FIJO*/  
+
+/*WAVE INICIO*/
+
+.wave{
+  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+/*WAVE FINAL*/
+
+  /*CIERRE PROFILE PAGINA DE INDEX*/
