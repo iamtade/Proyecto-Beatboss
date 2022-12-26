@@ -71,6 +71,33 @@ a {
 
  }
 
+/* Boton de Wsp fijo*/
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 41px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  transition: 0.3s;
+  background-color: rgb(1, 80, 1);
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+/*CIERRE DE BOTON DE WSP FIJO*/
 
 /*CIERRE PAGINA DE PRODUCTOS*/
 

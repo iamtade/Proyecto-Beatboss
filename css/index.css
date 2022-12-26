@@ -182,8 +182,8 @@
 /*CIERRE PROFILE PAGINA DE INDEX*/
 /* PAGINA DE UBICACION*/
 .bg-ubicacion {
-  background-color: #6d0707;
-  background-image: linear-gradient(to top, #000000 0%, #520404 100%);
+  background-color: black;
+  margin-top: 50px;
 }
 
 .ubicacion-info {
@@ -218,20 +218,21 @@
   max-width: 450px;
   margin: 20px auto;
   font-family: "Open sans", sans-serif;
+  color: white;
 }
 
 .ubicacion-map-section {
-  width: 100%;
+  width: 90%;
   margin-top: 80px;
 }
 
 .map {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   border-radius: 10%;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 1200px) {
   .ubicacion-info {
     margin-bottom: 0px;
   }
@@ -239,6 +240,8 @@
     margin-top: 30px;
     margin-left: 100px;
     width: 100%;
+    height: 550px;
+  width: 600px;
   }
   .ubicacion {
     text-align: left;
@@ -260,6 +263,7 @@
 }
 /*CIERRE DE PAGINA DE UBICACION*/
 /*PREGUNTAS FRECUENTES*/
+
 .preguntas {
   margin-bottom: 25px;
 }
@@ -273,11 +277,19 @@
   color: white;
 }
 .pf-titlediv .pf-title {
-  font-size: 35px;
+  font-size: 45px;
   font-weight: bold;
   color: white;
   font-family: "Monserrat", sans-serif;
 }
+
+.pf-content-raya p{
+  display: flex;
+  border-top: #520404 4px solid;
+  width: 15%;
+  text-align: center;
+}
+
 .pf-titlediv .pf-title p {
   color: white;
 }
@@ -337,12 +349,12 @@
   bottom: 10px;
 }
 
-@media (max-width: 550.98px) {
+@media (min-width: 760.98px) {
   .p-6 {
     padding: 5rem;
   }
   .contact-box {
-    padding: 0;
+    padding: 10;
   }
   .width-100 {
     width: 100%;
@@ -355,6 +367,7 @@
 }
 /*CIERRE DE PAGINA DE CONTACTO*/
 /*PAGINA DE PRODUCTOS*/
+
 .titlediv-product {
   margin-top: 150px;
 }
@@ -374,7 +387,7 @@
   grid-auto-rows: minmax(500px, auto);
   gap: 20px;
   padding: 20px;
-  margin-left: 60px;
+  margin-left: 50px;
   
 }
 .container-product div {

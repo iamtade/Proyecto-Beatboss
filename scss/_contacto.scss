@@ -10,6 +10,7 @@
   
   .p-6 {
     padding: 2rem 7rem;
+
   }
   
   .contact-box {
@@ -58,10 +59,12 @@
   @media (max-width: 550.98px) {
     .p-6 {
         padding: 5rem;
+        
     }
   
     .contact-box {
         padding: 0;
+       
     }
   
     .width-100 {
@@ -72,6 +75,7 @@
   @media (max-width: 1200px) { 
     .register-bg {
         display: none;
+       
     }
   }
   

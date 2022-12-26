@@ -9,3 +9,16 @@ $details-color:red;
 $p-color:white;
 $bg-primary-color:black;
 $bg-secundary-color:#6d0707;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+// Create your own map
+$custom-colors: (
+  "custom-color": #900
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
