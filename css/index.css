@@ -20,39 +20,123 @@
   margin: 0;
   font-family: "Monserrat", sans-serif;
 }
+
+.bg-profile h1 a {
+  font-family: "Monserrat", sans-serif;
+  color: white;
+  background-color: #ef2029;
+  border: none;
+  font-size: 25px;
+  padding: 5px 50px;
+  border-radius: 7px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
 .bg-profile p {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.3;
   max-width: 450px;
-  margin: 20px auto;
+  margin: 20px 30px;
   font-family: "Open sans", sans-serif;
 }
 .bg-profile .profile-img {
   width: 80%;
-  max-width: 350px;
+  max-width: 550px;
+  
 }
+
+.bg-profile .profile-img:hover {
+  transform: translateY(-15px);
+  transition: 0.5s;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+
 .bg-profile button {
   font-family: "Monserrat", sans-serif;
-  color: white;
-  background-color: red;
+  color: #000;
+  background-color: white;
   border: none;
   font-size: 20px;
   padding: 0.5em 1em;
   border-radius: 7px;
   cursor: pointer;
 }
+
+.piefoto{
+  font-size: 70px;
+  font-weight: 500;
+  font-family: "Open sans", sans-serif;
+}
+
+
 .bg-profile button:hover {
-  filter: brightness(130%);
+  color: white;
+  background-color: #ef2029;
+  transition: 0.5s;
 }
 @media (min-width: 950px) {
   .bg-profile .profile-info {
     margin-bottom: 0px;
   }
-  .bg-profile .profile-img {
-    width: 100%;
-    max-width: 350px;
+
+  @keyframes slide-on {
+    0% {
+      right: -50%;
+    }
+    100% {
+      right: 50%;
+      transform: translateX(45%);
+    }
   }
+  
+  .profile-img {
+    animation-name: slide-on;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+@keyframes slide-in {
+  100% {
+    right: -50%;
+  }
+  100% {
+    left: 50%;
+    transform: translateX(100%);
+  }
+}
+
+
+  .bg-profile h1 a {
+    text-decoration: none;
+    font-family: "Monserrat", sans-serif;
+    color: white;
+    background-color: #ef2029;
+    border: none;
+    font-size: 40px;
+    padding: 10px 50px;
+    border-radius: 7px;
+    cursor: pointer;
+    }
+
+  .bg-profile .profile-img {
+    width: 550px;
+    margin-left: 80px;
+    margin-top: 50px;
+  }
+
+
+  .piefoto{
+    font-size: 150px;
+    width: 150px;
+    font-weight: 500;
+    font-family: "Open sans", sans-serif;
+  }
+
   .bg-profile .profile {
     text-align: left;
     display: flex;
@@ -188,10 +272,12 @@
 
 .ubicacion-info {
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .ubicacion {
   text-align: center;
+  margin-bottom: 8%;
 }
 
 .ubicacion-title {
@@ -200,6 +286,7 @@
   font-family: "Monserrat", sans-serif;
   margin-top: 150px;
   color: white;
+  text-align: center;
 }
 
 .ubicacion-stitle {
@@ -222,14 +309,16 @@
 }
 
 .ubicacion-map-section {
-  width: 90%;
+  width: 100%;
   margin-top: 80px;
 }
 
 .map {
   height: 400px;
-  width: 400px;
+  width: 100%;
   border-radius: 10%;
+  padding: 5px;
+  margin: auto;
 }
 
 @media (min-width: 1200px) {
@@ -241,7 +330,8 @@
     margin-left: 100px;
     width: 100%;
     height: 550px;
-  width: 600px;
+    width: 550px;
+
   }
   .ubicacion {
     text-align: left;
@@ -250,6 +340,7 @@
     max-width: 980px;
     margin: 0 auto;
     align-items: center;
+    margin-bottom: 8%;
   }
   .ubicacion-title {
     font-size: 60px;
@@ -295,6 +386,9 @@
 }
 
 /*Cierre de preguntas frecuentes*/
+
+
+
 /*PAGINA DE CONTACTO*/
 .bg-light {
   background-color: white !important;
@@ -305,13 +399,13 @@
 }
 
 .p-6 {
-  padding: 2rem 7rem;
+  padding: 5rem 2rem;
 }
 
 .contact-box {
-  padding: 3rem;
+  padding: 1rem;
   font-family: "Monserrat", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
   background-color: black !important;
   color: white;
@@ -383,13 +477,33 @@
 
 .container-product {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-gap: 50px;
+
+  /* display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-auto-rows: minmax(500px, auto);
   gap: 20px;
   padding: 20px;
-  margin-left: 50px;
+  margin-left: 50px; */
   
 }
+
+@media (max-width: 768px) {
+  .card-product {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   
+  }
+
+}
+@media (max-width: 576px) {
+  .card-product {
+    grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
+    grid-gap: 10px;
+  }
+}
+
+
 .container-product div {
   background-color: #6d0707;
   width: 330px;
@@ -397,7 +511,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  margin: 20px;
+  margin: auto;
   text-align: center;
   transition: all 0.25s;
 }
@@ -408,6 +522,8 @@
 .container-product img {
   width: 330px;
   height: 220px;
+  /* max-width: 100%;
+  height: auto; */
 }
 .container-product h4 {
   font-weight: 600;
@@ -426,12 +542,15 @@
   color: #3498db;
 }
 
+.wave_product{
+  margin-bottom: -15px;
+}
+
 /*CIERRE PAGINA DE PRODUCTOS*/
 /* PREGUNTAS FRECUENTES */
 .pf-titlediv {
   margin-top: 150px;
   margin-bottom: 50px;
-  border-bottom: #520404 1px solid;
 }
 .pf-titlediv p {
   font-size: 18px;
